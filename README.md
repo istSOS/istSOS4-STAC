@@ -61,7 +61,7 @@ docker-compose run stacsta https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.
 
 ```python
 # Installing requirements
-python -m pip install pypgstac psycopg[pool]
+python -m pip install pypgstac==0.8.1 psycopg[pool]
 ```
 
 ```bash
@@ -79,7 +79,7 @@ pypgstac pgready --dsn postgresql://username:password@0.0.0.0:5439/postgis
 # Ingesting collection
 pypgstac load collections collection.json --dsn postgresql://username:password@localhost:5439/postgis --method upsert
 # Ingesting items
-pypgstac load items tems.json --dsn postgresql://username:password@localhost:5439/postgis --method upsert
+pypgstac load items items.json --dsn postgresql://username:password@localhost:5439/postgis --method upsert
 ```
 ## start exploring your dataset with:
   ### STAC Metadata service: http://localhost:8081
