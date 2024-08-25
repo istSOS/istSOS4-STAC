@@ -106,11 +106,6 @@ class stac_from_sta:
         for thing_index, thing_id_number in enumerate(tqdm(list_of_things)):
 
             print(f"Thing number{thing_id_number}")
-            if thing_index==2:
-                break
-            
-            
-
             fetched_vars["item_datetime"] = None
             fetched_vars["item_datetime_str"] = []
             fetched_vars["item_bbox"] = []
@@ -205,7 +200,7 @@ class stac_from_sta:
             SAVEcatalog(catalog=fetched_vars["catalog"],stac_dir=stac_dir)
         except Exception as exc:
             print(f"SAVE failed to directory {stac_dir}")
-            print("tryiing")
+
             stac_dir = os.getcwd()
             SAVEcatalog(catalog=fetched_vars["catalog"],stac_dir=stac_dir)  
         print("STAC metadata generation finished")
@@ -245,8 +240,7 @@ class stac_from_sta:
             else:
                 print("failed collection")
 
-            
-        print(catalog)
+
         collections = list(catalog.get_collections())
         if len(collections) != 1:
             print("Catalog has multiple collections")
@@ -336,4 +330,5 @@ if __name__ == "__main__":
 
 
     stac_from_sta(sta_link=sta_link,stac_dir=stac_dir,title=title,description=description,catalog_name=catalog_name,id=id,asset_as=asset_as,specific_thing_start=specific_thing_start,specific_thing_end=specific_thing_end,stac_catalog_exists=stac_catalog_exist,stac_collection_exists=stac_collection_exists)
+
 
