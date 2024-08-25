@@ -147,45 +147,50 @@ class stac_from_sta:
 
         
         fetched_vars["collection_datetime"] = collectiondt(fetched_vars["collection_datetime"])
-
-        print("Getting data spatial and temproral")
-        try:
-            collection_e =fetched_vars["collection"]
-            fetched_vars["collection_bbox_existing"]=(collection_e.extent.spatial.bboxes)[0]
-            fetched_vars["collection_datetime_existing"]=(collection_e.extent.temporal.intervals)[0]
-            print(fetched_vars)
-            dt = fetched_vars["collection_datetime"]
-            dt_exist = fetched_vars["collection_datetime_existing"]
-            dt_exist_mod = [dt.replace(tzinfo=None) for dt in dt_exist]
-            print(dt,dt_exist_mod)
+        # path_to_check = (stac_dir+"\\"+default_catalog_name)
             
-            new_datetime_range = [
-                min(dt[0], dt_exist_mod[0]),  
-                max(dt[1], dt_exist_mod[1])  
-            ]
-            print(new_datetime_range)
+        # print(f"path to check {path_to_check}")
 
-            cbox = fetched_vars["collection_bbox"]
-            cbox_exist = fetched_vars["collection_bbox_existing"]
+        if stac_catalog_exists is True:
+            try:
+                collection_e = fetched_vars["collection"]
+                fetched_vars["collection_bbox_existing"]=(collection_e.extent.spatial.bboxes)[0]
+                fetched_vars["collection_datetime_existing"]=(collection_e.extent.temporal.intervals)[0]
+                
+                dt = fetched_vars["collection_datetime"]
+                dt_exist = fetched_vars["collection_datetime_existing"]
+                dt_exist_mod = [dt.replace(tzinfo=None) for dt in dt_exist]
+
+                
+                new_datetime_range = [
+                    min(dt[0], dt_exist_mod[0]),  
+                    max(dt[1], dt_exist_mod[1])  
+                ]
+                print(new_datetime_range)
+
+                cbox = fetched_vars["collection_bbox"]
+                cbox_exist = fetched_vars["collection_bbox_existing"]
+                
+                new_bbox = [
+                    min(cbox[0], cbox_exist[0]),  
+                    min(cbox[1], cbox_exist[1]),  
+                    max(cbox[2], cbox_exist[2]),  
+                    max(cbox[3], cbox_exist[3]),  
+                ]
+
+                spatial_extent = pystac.SpatialExtent(bboxes=[new_bbox])
+
+                temporal_extent = pystac.TemporalExtent(intervals=[new_datetime_range])
+
+                fetched_vars["collection"].extent = pystac.Extent(spatial=spatial_extent,
+                                                                        temporal=temporal_extent
+                                                                        )
+            except Exception as exc:
+                print("No existing collection exists error in getting extent of collection",exc)
+
+
+        else:
             
-            new_bbox = [
-                min(cbox[0], cbox_exist[0]),  
-                min(cbox[1], cbox_exist[1]),  
-                max(cbox[2], cbox_exist[2]),  
-                max(cbox[3], cbox_exist[3]),  
-            ]
-
-            spatial_extent = pystac.SpatialExtent(bboxes=[new_bbox])
-
-            temporal_extent = pystac.TemporalExtent(intervals=[new_datetime_range])
-
-            fetched_vars["collection"].extent = pystac.Extent(spatial=spatial_extent,
-                                                                    temporal=temporal_extent
-                                                                    ) 
-
-        except Exception as exc:
-            print("No existing collection exists error in getting extent of collection",exc)
-
             spatial_extent = pystac.SpatialExtent(bboxes=[fetched_vars["collection_bbox"]])
 
             temporal_extent = pystac.TemporalExtent(intervals=[fetched_vars["collection_datetime"]])

@@ -94,9 +94,9 @@ def STACCatalog(
                 
     else:
         path_to_check = (stac_dir+"\\"+default_catalog_name)
-        print(f"path tocheck {path_to_check}")
+        print(f"path to check {path_to_check}")
         print("No existing catalog specified, creating a new catalog ")
-        print(f"stacid {stac_id}")
+
         if stac_id is None:
             stac_id = "STACfromSTA"
         id_catalog = stac_id + "-catalog"
