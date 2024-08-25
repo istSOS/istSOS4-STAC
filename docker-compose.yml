@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  stacscript:
+    build: .
+    volumes: [.:/app]
+    command: ["https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de","data", "STACdemo", "STACdemoTitle", "DescriptionofDemo","catalog.json","CSV","1","10","False","False" ]
+

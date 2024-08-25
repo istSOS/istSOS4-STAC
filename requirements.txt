@@ -1,0 +1,6 @@
+tqdm
+requests
+urllib3
+shapely
+pystac
+pypgstac==0.8.1
