@@ -57,7 +57,7 @@ docker-compose run stacsta https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.
 
   ## Steps for ingesting the data into postgres and search and visualize:
 
-  ### To query and visualize the data using STAC Browser and stac-fastapi:
+  ### To query and visualize the data using STAC Browser and stac-fastapi, we utilize eoAPI:
 
 ```python
 # Installing requirements
@@ -65,8 +65,9 @@ python -m pip install pypgstac==0.8.1 psycopg[pool]
 ```
 
 ```bash
+git clone https://github.com/developmentseed/eoAPI.git
 cd eoAPI
-docker-compose up 
+docker compose up
 ```
 
 Start a new terminal window and navigate to the folder “data” or the ```stac_dir``` specified while execution
