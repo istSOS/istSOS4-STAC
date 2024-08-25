@@ -68,7 +68,8 @@ python -m pip install pypgstac==0.8.1 psycopg[pool]
 cd eoAPI
 docker compose up
 ```
-(If fetting any error in above command try docker system prune and retry)
+(If getting any error in above command try docker system prune and retry, else directly clone from https://github.com/developmentseed/eoAPI)
+
 Start a new terminal window and navigate to the folder “data” or the ```stac_dir``` specified while execution
 The contents of the directory will have folder named with ```id```, which we gave previously (or “STACfromSTA” if default). There must exist catalog.json, collection.json and items.json
 ```bash
