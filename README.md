@@ -1,4 +1,4 @@
-# istsos-miu-stac
+# istSOS4-STAC
 STAC metadata generation and search support for istsos-miu
 
 ## Steps to follow to generate the STAC metadata:
