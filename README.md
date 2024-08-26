@@ -67,7 +67,7 @@ python -m pip install pypgstac==0.8.1 psycopg[pool]
 ```bash
 cd eoAPI
 chmod +x dockerfiles/scripts/wait-for-it.sh 
-docker compose up
+docker-compose up
 ```
 
 
