@@ -49,7 +49,7 @@ docker-compose up
 ```
  with custom parameters:
 ```bash
-docker-compose run stacsta https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de data "STACdemo" "stactitle" "description-STAC" "catalog.json" "CSV" "1" "5" False False
+docker-compose run stacscript https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de data "STACdemo" "stactitle" "description-STAC" "catalog.json" "CSV" "1" "5" False False
 ```
 
   
