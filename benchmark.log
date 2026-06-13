@@ -1,0 +1,80 @@
+2026-06-13 18:56:24,902  INFO      benchmark  Fetching from https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1
+2026-06-13 18:56:27,970  INFO      benchmark  Fetched page 1 -- 100 Things so far
+2026-06-13 18:56:28,878  INFO      benchmark  Fetched page 2 -- 200 Things so far
+2026-06-13 18:56:29,515  INFO      benchmark  Fetched page 3 -- 300 Things so far
+2026-06-13 18:56:30,164  INFO      benchmark  Fetched page 4 -- 400 Things so far
+2026-06-13 18:56:30,839  INFO      benchmark  Fetched page 5 -- 500 Things so far
+2026-06-13 18:56:31,602  INFO      benchmark  Fetched page 6 -- 600 Things so far
+2026-06-13 18:56:32,193  INFO      benchmark  Fetched page 7 -- 700 Things so far
+2026-06-13 18:56:32,863  INFO      benchmark  Fetched page 8 -- 800 Things so far
+2026-06-13 18:56:33,476  INFO      benchmark  Fetched page 9 -- 900 Things so far
+2026-06-13 18:56:34,047  INFO      benchmark  Fetched page 10 -- 1000 Things so far
+2026-06-13 18:56:34,610  INFO      benchmark  Fetched page 11 -- 1100 Things so far
+2026-06-13 18:56:35,120  INFO      benchmark  Fetched page 12 -- 1200 Things so far
+2026-06-13 18:56:35,649  INFO      benchmark  Fetched page 13 -- 1300 Things so far
+2026-06-13 18:56:36,221  INFO      benchmark  Fetched page 14 -- 1400 Things so far
+2026-06-13 18:56:36,827  INFO      benchmark  Fetched page 15 -- 1500 Things so far
+2026-06-13 18:56:37,477  INFO      benchmark  Fetched page 16 -- 1600 Things so far
+2026-06-13 18:56:38,025  INFO      benchmark  Fetched page 17 -- 1700 Things so far
+2026-06-13 18:56:38,666  INFO      benchmark  Fetched page 18 -- 1800 Things so far
+2026-06-13 18:56:39,222  INFO      benchmark  Fetched page 19 -- 1900 Things so far
+2026-06-13 18:56:39,732  INFO      benchmark  Fetched page 20 -- 2000 Things so far
+2026-06-13 18:56:40,245  INFO      benchmark  Fetched page 21 -- 2100 Things so far
+2026-06-13 18:56:40,843  INFO      benchmark  Fetched page 22 -- 2200 Things so far
+2026-06-13 18:56:41,365  INFO      benchmark  Fetched page 23 -- 2300 Things so far
+2026-06-13 18:56:41,841  INFO      benchmark  Fetched page 24 -- 2400 Things so far
+2026-06-13 18:56:42,321  INFO      benchmark  Fetched page 25 -- 2500 Things so far
+2026-06-13 18:56:43,001  INFO      benchmark  Fetched page 26 -- 2600 Things so far
+2026-06-13 18:56:43,712  INFO      benchmark  Fetched page 27 -- 2700 Things so far
+2026-06-13 18:56:44,435  INFO      benchmark  Fetched page 28 -- 2800 Things so far
+2026-06-13 18:56:45,364  INFO      benchmark  Fetched page 29 -- 2900 Things so far
+2026-06-13 18:56:46,022  INFO      benchmark  Fetched page 30 -- 3000 Things so far
+2026-06-13 18:56:46,672  INFO      benchmark  Fetched page 31 -- 3100 Things so far
+2026-06-13 18:56:47,242  INFO      benchmark  Fetched page 32 -- 3200 Things so far
+2026-06-13 18:56:47,778  INFO      benchmark  Fetched page 33 -- 3300 Things so far
+2026-06-13 18:56:48,350  INFO      benchmark  Fetched page 34 -- 3400 Things so far
+2026-06-13 18:56:48,956  INFO      benchmark  Fetched page 35 -- 3500 Things so far
+2026-06-13 18:56:49,634  INFO      benchmark  Fetched page 36 -- 3600 Things so far
+2026-06-13 18:56:50,233  INFO      benchmark  Fetched page 37 -- 3700 Things so far
+2026-06-13 18:56:50,874  INFO      benchmark  Fetched page 38 -- 3800 Things so far
+2026-06-13 18:56:51,446  INFO      benchmark  Fetched page 39 -- 3900 Things so far
+2026-06-13 18:56:51,976  INFO      benchmark  Fetched page 40 -- 4000 Things so far
+2026-06-13 18:56:52,555  INFO      benchmark  Fetched page 41 -- 4100 Things so far
+2026-06-13 18:56:53,173  INFO      benchmark  Fetched page 42 -- 4200 Things so far
+2026-06-13 18:56:53,665  INFO      benchmark  Fetched page 43 -- 4300 Things so far
+2026-06-13 18:56:54,254  INFO      benchmark  Fetched page 44 -- 4400 Things so far
+2026-06-13 18:56:54,812  INFO      benchmark  Fetched page 45 -- 4500 Things so far
+2026-06-13 18:56:55,458  INFO      benchmark  Fetched page 46 -- 4600 Things so far
+2026-06-13 18:56:55,940  INFO      benchmark  Fetched page 47 -- 4700 Things so far
+2026-06-13 18:56:56,521  INFO      benchmark  Fetched page 48 -- 4800 Things so far
+2026-06-13 18:56:57,032  INFO      benchmark  Fetched page 49 -- 4900 Things so far
+2026-06-13 18:56:57,659  INFO      benchmark  Fetched page 50 -- 5000 Things so far
+2026-06-13 18:56:58,248  INFO      benchmark  Fetched page 51 -- 5100 Things so far
+2026-06-13 18:56:58,811  INFO      benchmark  Fetched page 52 -- 5200 Things so far
+2026-06-13 18:56:59,434  INFO      benchmark  Fetched page 53 -- 5300 Things so far
+2026-06-13 18:56:59,993  INFO      benchmark  Fetched page 54 -- 5400 Things so far
+2026-06-13 18:57:00,665  INFO      benchmark  Fetched page 55 -- 5500 Things so far
+2026-06-13 18:57:01,252  INFO      benchmark  Fetched page 56 -- 5600 Things so far
+2026-06-13 18:57:01,516  INFO      benchmark  Fetched page 57 -- 5613 Things so far
+2026-06-13 18:57:01,731  INFO      benchmark  Fetch complete: 5613 Things, 22949 Datastreams, fetch_time=36.609s
+2026-06-13 18:57:01,758  INFO      benchmark  FETCH SUMMARY
+2026-06-13 18:57:01,758  INFO      benchmark    STA instance   : https://airquality-frost.k8s.ilt-dmz.iosb.fraunhofer.de/v1.1
+2026-06-13 18:57:01,758  INFO      benchmark    Things         : 5613
+2026-06-13 18:57:01,758  INFO      benchmark    Datastreams    : 22949
+2026-06-13 18:57:01,758  INFO      benchmark    Fetch time     : 36.609s
+2026-06-13 18:57:01,760  INFO      benchmark  Running transformation x1 iterations for timing accuracy...
+2026-06-13 18:57:02,368  WARNING   benchmark  Skipping datastream 18060 -- no phenomenonTime
+2026-06-13 18:57:03,063  WARNING   benchmark  Skipping datastream 18056 -- no phenomenonTime
+2026-06-13 18:57:03,063  WARNING   benchmark  Skipping datastream 18057 -- no phenomenonTime
+2026-06-13 18:57:03,063  WARNING   benchmark  Skipping datastream 18058 -- no phenomenonTime
+2026-06-13 18:57:03,063  WARNING   benchmark  Skipping datastream 18059 -- no phenomenonTime
+2026-06-13 18:57:03,188  INFO      benchmark  TRANSFORMATION SUMMARY
+2026-06-13 18:57:03,188  INFO      benchmark    Collections built  : 5613
+2026-06-13 18:57:03,188  INFO      benchmark    Items built        : 22944
+2026-06-13 18:57:03,189  INFO      benchmark    Items skipped      : 5  (no phenomenonTime)
+2026-06-13 18:57:03,189  INFO      benchmark    Iterations         : 1
+2026-06-13 18:57:03,189  INFO      benchmark    Avg transform time : 1422.00ms
+2026-06-13 18:57:03,189  INFO      benchmark    Total (1x)        : 1422.0ms
+2026-06-13 18:57:03,189  INFO      benchmark    Per-item avg       : 0.0620ms
+2026-06-13 18:57:04,025  INFO      benchmark  Output saved to : benchmark_output.json
+2026-06-13 18:57:04,026  INFO      benchmark  Output size     : 14892.4 KB

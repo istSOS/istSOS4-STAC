@@ -1,6 +1,12 @@
-tqdm
-requests
-urllib3
-shapely
+# istSOS Metadata Connector - runtime dependencies
+#
+# API layer
+fastapi
+uvicorn[standard]
+# HTTP client (harvester + utils)
+aiohttp
+# STAC transformer
 pystac
-pypgstac==0.8.1
+# Configuration Layer
+pydantic>=2.7.0,<3.0.0
+pydantic-settings>=2.3.0,<3.0.0

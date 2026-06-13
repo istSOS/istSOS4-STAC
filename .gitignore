@@ -1,0 +1,12 @@
+__pycache__/
+
+.env
+*.env
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+
+benchmark_output.json
